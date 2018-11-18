@@ -1,0 +1,39 @@
+﻿#corpo {
+    background-color: gray;
+    background-size: cover;
+    padding: 0.8em;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+#formulario {
+    padding: 1em;
+    background-color: white;
+}
+
+#formulario h2 {
+    font-weight: 500;
+    text-align: center;
+}
+
+#formulario label {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-top: 12px;
+}
+
+#formulario .campo {
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 10px;
+    width: 100%;
+}
+
+
+#enviar {
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
