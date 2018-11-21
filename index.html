@@ -16,14 +16,91 @@
     <!-- Custom styles for this template -->
     <link href="css/portfolio-item.css" rel="stylesheet">
 
+    <link href="search.css" rel="stylesheet" />
+
+      <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            if (input.value=="") {
+                ul.style.display = "none";
+                return;
+            } else {
+                ul.style.display = "block";
+            }
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "block";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+      </script>
     
     
   </head>
 
   <body>
 
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom styles for this template -->
+      <link href="css/portfolio-item.css" rel="stylesheet">
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <div class="container">
+              <a class="navbar-brand" href="#">Bus Helper</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Main Map</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Bus List</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="support.html">Support</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
     <!-- Page Content -->
     <div class="container">
+    <br />
+    <br />
+        <div class="row">
+            <div class="col-md-12">
+                <input type="text" id="myInput" maxlength="3" onkeyup="myFunction()" placeholder="Search your bus.." >
+                
+                    <ul id="myUL">
+                        <li><a href="#">10</a></li>
+                        <li><a href="#">11</a></li>
+
+                        <li><a href="#">24</a></li>
+                        <li><a href="#">24T</a></li>
+
+                        <li><a href="#">34</a></li>
+                        <li><a href="#">35</a></li>
+                        <li><a href="#">36</a></li>
+                    </ul>
+                
+            </div>
+
+        </div>
+
 
       <!-- Portfolio Item Heading -->
       <h1 class="my-4">Page Heading
