@@ -10,6 +10,7 @@
 
     <title>Bus Helper</title>
 
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -49,6 +50,16 @@
   </head>
 
   <body>
+
+      <div id="nav-placeholder">
+
+      </div>
+
+      <script>
+        $(function(){
+          $("#nav-placeholder").load("menu.html");
+        });
+      </script>
 
       <!-- Bootstrap core CSS -->
       <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
