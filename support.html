@@ -10,6 +10,28 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/portfolio-item.css" rel="stylesheet">
+
+    <script>
+
+        function enviar() {
+            var input1, input2, input3;
+
+            
+
+            input1 = input = document.getElementById('nome');
+            input2 = input = document.getElementById('email');
+            input3 = input = document.getElementById('mensagem');
+
+            input1.value = '';
+            input2.value = '';
+            input3.value = '';
+
+            alert("E-mail sent.");
+
+        }
+
+    </script>
+
 </head>
 
 <body>
@@ -22,12 +44,15 @@
           $("#nav-placeholder").load("menu.html");
         });
     </script>
+    <br />
+    <br />
+
 
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div id="corpo" style="background-color:white">
-                    <form id="formulario" action="mailto:bushelperadmin@gmail.com" style="background-color:lightgray">
+                    <form id="formulario" style="background-color:lightgray">
                         <h2>Envie-nos uma mensagem!</h2>
 
                         <label for="nome">Nome</label>
@@ -39,7 +64,7 @@
                         <label for="mensagem">Mensagem</label>
                         <textarea name="mensagem" id="mensagem" class="campo" rows="4" placeholder="Mensagem" required="required"></textarea>
 
-                        <input type="submit" id="enviar" class="campo" value="Enviar">
+                        <input onclick="enviar()" type="submit" id="enviar" class="campo"  value="Enviar">
                     </form>
                 </div>
             </div>
@@ -48,7 +73,8 @@
     <br />
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+            <p class="m-0 text-center text-white">Software Project Management 2018/2019</p>
+            <p class="m-0 text-center text-white">G26 - Bus Helper</p>
         </div>
         <!-- /.container -->
     </footer>

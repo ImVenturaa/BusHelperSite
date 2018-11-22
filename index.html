@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,7 +19,7 @@
 
     <link href="search.css" rel="stylesheet" />
 
-      <script>
+    <script>
         function myFunction() {
             // Declare variables
             var input, filter, ul, li, a, i;
@@ -27,7 +27,6 @@
             filter = input.value.toUpperCase();
             ul = document.getElementById("myUL");
             li = ul.getElementsByTagName('li');
-
             if (input.value=="") {
                 ul.style.display = "none";
                 return;
@@ -44,146 +43,124 @@
                 }
             }
         }
-      </script>
-    
-    
-  </head>
+    </script>
 
-  <body>
 
-      <div id="nav-placeholder">
+</head>
 
-      </div>
+<body>
 
-      <script>
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
         $(function(){
           $("#nav-placeholder").load("menu.html");
         });
-      </script>
+    </script>
 
-      <!-- Bootstrap core CSS -->
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <!-- Custom styles for this template -->
-      <link href="css/portfolio-item.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-          <div class="container">
-              <a class="navbar-brand" href="index.html"> <img class"img-fluid" src="logo.png" alt="" height="50" width="80"/></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarResponsive">
-                  <ul class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Main Map</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Bus List</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="support.html">Support</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-
+   
     <!-- Page Content -->
     <div class="container">
-    <br />
-    <br />
+        <br />
+        <br />
         <div class="row">
             <div class="col-md-12">
-                <input type="text" id="myInput" maxlength="3" onkeyup="myFunction()" placeholder="Search your bus.." >
-                
-                    <ul id="myUL">
-                        <li><a href="#">10</a></li>
-                        <li><a href="#">11</a></li>
+                <input type="text" id="myInput" maxlength="3" onkeyup="myFunction()" placeholder="Search your bus..">
 
-                        <li><a href="#">24</a></li>
-                        <li><a href="#">24T</a></li>
+                <ul id="myUL">
+                    <li><a href="#">10</a></li>
+                    <li><a href="#">11</a></li>
 
-                        <li><a href="#">34</a></li>
-                        <li><a href="#">35</a></li>
-                        <li><a href="#">36</a></li>
-                    </ul>
-                
+                    <li><a href="#">24</a></li>
+                    <li><a href="#">24T</a></li>
+
+                    <li><a href="#">34</a></li>
+                    <li><a href="#">35</a></li>
+                    <li><a href="#">36</a></li>
+                </ul>
+
             </div>
 
         </div>
 
 
-      <!-- Portfolio Item Heading -->
-      <h1 class="my-4">Bus Helper
-        <small></small>
-      </h1>
+        <!-- Portfolio Item Heading -->
+        <h1 class="my-4">
+            Bus Helper
+            <small></small>
+        </h1>
 
-      <!-- Portfolio Item Row -->
-      <div class="row">
+        <!-- Portfolio Item Row -->
+        <div class="row">
 
-        <div class="col-md-8">
-          <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+            <div class="col-md-8">
+                <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="my-3">About us</h3>
+                <p>This website was developed in order to provide the bus community, on their day-to-day life, the necessary information so that they can take advantage of all the routes, bus stops and schedules of the buses on the city of Coimbra.</p>
+                <h3 class="my-3">Possibilities</h3>
+                <ul>
+                    <li> Navigate Full map</li>
+                    <li> Navigate Individual maps</li>
+                    <li> Ask questions</li>
+                    <li> Search for your route</li>
+                </ul>
+            </div>
+
         </div>
+        <!-- /.row -->
+        <!-- Related Projects Row -->
+        <h3 class="my-4">SMTUC</h3>
 
-        <div class="col-md-4">
-            <h3 class="my-3">About us</h3>
-            <p>This website was developed in order to provide the bus community, on their day-to-day life, the necessary information so that they can take advantage of all the routes, bus stops and schedules of the buses on the city of Coimbra.</p>
-          <h3 class="my-3">Possibilities</h3>
-          <ul>
-            <li> Navigate Full map</li>
-            <li> Navigate Individual maps</li>
-            <li> Ask questions</li>
-            <li> Search for your route</li>
-          </ul>
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="http://www.smtuc.pt/">
+                    <img class="img-fluid" src="smtuc.jpeg" alt="" height="500" width="300">
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <p>"The Municipal Urban Transport Services of Coimbra (SMTUC) is a municipal structure designed to ensure the Public Transport Service of Passengers in the Municipality of Coimbra."</p>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Vision</h5>
+                <p>"Being a provider of urban public transport services with strong social, eminent, modern, trustworthy, safe, environmentally responsible concerns and thus contribute to the sustainable development of the County."</p>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Scope</h5>
+                <p>"Ensure an adequate public transport offer to the needs of the population, developing actions that favor the option of using public transport."</p>
+            </div>
+
         </div>
-
-      </div>
-      <!-- /.row -->
-
-      <!-- Related Projects Row -->
-      <h3 class="my-4">SMTUC</h3>
-
-      <div class="row">
-
-          <div class="col-md-3 col-sm-6 mb-4">
-              <a href="http://www.smtuc.pt/">
-                  <img class="img-fluid" src="smtuc.jpeg" alt="" height="500" width="300">
-              </a>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-              <p>"The Municipal Urban Transport Services of Coimbra (SMTUC) is a municipal structure designed to ensure the Public Transport Service of Passengers in the Municipality of Coimbra."</p>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-              <h5>Vision</h5>
-              <p>"Being a provider of urban public transport services with strong social, eminent, modern, trustworthy, safe, environmentally responsible concerns and thus contribute to the sustainable development of the County."</p>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-              <h5>Scope</h5>
-              <p>"Ensure an adequate public transport offer to the needs of the population, developing actions that favor the option of using public transport."</p>
-          </div>
-
-      </div>
-      <!-- /.row -->
+        <!-- /.row -->
 
     </div>
     <!-- /.container -->
-
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-3 bg-dark">
         <div class="container">
             <p class="m-0 text-center text-white">Software Project Management 2018/2019</p>
             <p class="m-0 text-center text-white">G26 - Bus Helper</p>
         </div>
-      <!-- /.container -->
+        <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  </body>
+</body>
 
 </html>
