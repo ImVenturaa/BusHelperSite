@@ -23,21 +23,34 @@
         });
     </script>
 
-    <div id="corpo">
-        <form id="formulario" action="mailto:bushelperadmin@gmail.com">
-            <h2>Envie-nos uma mensagem!</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="corpo" style="background-color:white">
+                    <form id="formulario" action="mailto:bushelperadmin@gmail.com" style="background-color:lightgray">
+                        <h2>Envie-nos uma mensagem!</h2>
 
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" class="campo" placeholder="Nome" required="required" />
-            <br />
-            <label for="email">Endereço de e-mail</label>
-            <input type="email" name="email" id="email" class="campo" placeholder="exemplo@exemplo.com" required="required" />
-            <br />
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" class="campo" rows="4" placeholder="Mensagem" required="required"></textarea>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" class="campo" placeholder="Nome" required="required" />
+                        <br />
+                        <label for="email">Endereço de e-mail</label>
+                        <input type="email" name="email" id="email" class="campo" placeholder="exemplo@exemplo.com" required="required" />
+                        <br />
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" class="campo" rows="4" placeholder="Mensagem" required="required"></textarea>
 
-            <input type="submit" id="enviar" class="campo" value="Enviar">
-        </form>
+                        <input type="submit" id="enviar" class="campo" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
+    <br />
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        </div>
+        <!-- /.container -->
+    </footer>
 </body>
 </html>
