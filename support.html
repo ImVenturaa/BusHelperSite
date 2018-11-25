@@ -11,27 +11,6 @@
     <!-- Custom styles for this template -->
     <link href="css/portfolio-item.css" rel="stylesheet">
 
-    <script>
-
-        function enviar() {
-            var input1, input2, input3;
-
-            
-
-            input1 = input = document.getElementById('nome');
-            input2 = input = document.getElementById('email');
-            input3 = input = document.getElementById('mensagem');
-
-            input1.value = '';
-            input2.value = '';
-            input3.value = '';
-
-            alert("E-mail sent.");
-
-        }
-
-    </script>
-
 </head>
 
 <body>
@@ -52,20 +31,21 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="corpo" style="background-color:white">
-                    <form id="formulario" style="background-color:lightgray">
-                        <h2>Envie-nos uma mensagem!</h2>
+                    <div id="formulario" style="background-color:lightgray">
+                        <h2>Send us a message!</h2>
 
-                        <label for="nome">Nome</label>
+                        <label for="nome">Name</label>
                         <input type="text" name="nome" id="nome" class="campo" placeholder="Nome" required="required" />
                         <br />
-                        <label for="email">Endereço de e-mail</label>
+                        <label for="email">E-mail</label>
                         <input type="email" name="email" id="email" class="campo" placeholder="exemplo@exemplo.com" required="required" />
                         <br />
-                        <label for="mensagem">Mensagem</label>
+                        <label for="mensagem">Message</label>
                         <textarea name="mensagem" id="mensagem" class="campo" rows="4" placeholder="Mensagem" required="required"></textarea>
 
-                        <input onclick="enviar()" type="submit" id="enviar" class="campo"  value="Enviar">
-                    </form>
+                        <input type="submit" onclick="enviar()"  id="enviar" name="enviar" class="campo"  value="Send">
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -78,5 +58,23 @@
         </div>
         <!-- /.container -->
     </footer>
+    <script>
+        function enviar() {
+            
+            var input1, input2, input3;
+
+            input1 = input = document.getElementById('nome');
+            input2 = input = document.getElementById('email');
+            input3 = input = document.getElementById('mensagem');
+
+            input1.value = '';
+            input2.value = '';
+            input3.value = '';
+
+            alert("E-mail sent.");
+            
+        }
+    </script>
+
 </body>
 </html>
