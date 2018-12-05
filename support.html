@@ -3,16 +3,17 @@
 <head>
     <title>Support - Bus Helper</title>
     <meta charset="utf-8" />
-
+    
     <link href="css/support.css" rel="stylesheet" type="text/css" />
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!-- Custom styles for this template -->
     <link href="css/portfolio-item.css" rel="stylesheet">
     <link href="search.css" rel="stylesheet" />
-
+    <script src="/supportFunction.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
 
 </head>
 
@@ -46,7 +47,7 @@
                             <label for="mensagem">Message</label>
                             <textarea name="mensagem" id="mensagem" class="campo" rows="4" placeholder="Mensagem" required="required"></textarea>
                         
-                            <input type="submit" onclick="enviar()" id="enviar" name="enviar" class="campo" value="Send">
+                            <input type="submit" onclick="send()" id="enviar" name="enviar" class="campo" value="Send">
                         
                     </div>
 
@@ -64,23 +65,7 @@
         </div>
         <!-- /.container -->
     </footer>
-    <script>
-        function enviar() {
 
-            var input1, input2, input3;
-
-            input1 = input = document.getElementById('nome');
-            input2 = input = document.getElementById('email');
-            input3 = input = document.getElementById('mensagem');
-
-            input1.value = '';
-            input2.value = '';
-            input3.value = '';
-
-            alert("E-mail sent.");
-
-        }
-    </script>
 
 </body>
 
