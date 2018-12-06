@@ -8,22 +8,38 @@
             input3 = input = document.getElementById('mensagem');
 
             if(input1.value == ''){
-                alert("Please fill every field.");
+                swal({
+                  title: "Error!",
+                  text: "Please fill every field!",
+                  icon: "warning",
+                });
                 return;
             }
             if(input2.value == ''){
-                alert("Please fill every field.");
+                swal({
+                  title: "Error!",
+                  text: "Please fill every field!",
+                  icon: "warning",
+                });
                 return;
             }
             if(input3.value == ''){
-                alert("Please fill every field.");
+                swal({
+                  title: "Error!",
+                  text: "Please fill every field!",
+                  icon: "warning",
+                });
                 return;
             }
 
             var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
             if (!filter.test(input2.value)) {
-                alert('Please provide a valid email address');
+                swal({
+                  title: "Error!",
+                  text: "Please provide a valid e-mail address!",
+                  icon: "warning",
+                });
                 input2.focus();
                 return;
             }
@@ -31,6 +47,10 @@
             input2.value = '';
             input3.value = '';
 
-            alert("E-mail sent.");
+            swal({
+                  title: "Success!",
+                  text: "E-mail sent",
+                  icon: "success",
+            });
 
         }
