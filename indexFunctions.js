@@ -30,7 +30,8 @@
 
             ul = document.getElementById("myULShort");
             var hasFocus = $('#myInput').is(':focus');
-            if(hasFocus)
+            input = document.getElementById('myInput');
+            if(hasFocus && input.value == "")
                 ul.style.display = "block";
             else
                 ul.style.display = "none";
